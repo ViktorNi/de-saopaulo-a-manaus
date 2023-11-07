@@ -106,7 +106,8 @@ footer {
     }
 
     section {
-        font-size: 3.6vw; /* Adjust the font size for sections on smaller screens */
+        font-size: 2em;
+        line-height: 1.5em; /* Adjust the font size for sections on smaller screens */
     }
 
     section > p {
