@@ -96,26 +96,37 @@ footer {
     padding: 10px;
 }
 
-/* Estilos para telas pequenas (móveis) */
-@media (max-width: 768px) {
-    /* Estilos específicos para telas menores */
-    body {
-      font-size: 1em; /* Ajuste o tamanho da fonte para telas menores */
-    }
-  
-    /* Adicione outras regras de estilo conforme necessário */
-  }
-  
-  /* Estilos para telas médias (tablets) */
-  @media (min-width: 769px) and (max-width: 1024px) {
-    /* Estilos específicos para tablets */
-    body{
-        font-size: 1em;
-    }
-  }
-  
-  /* Estilos para telas maiores (desktop) */
-  @media (min-width: 1025px) {
-    /* Estilos específicos para telas maiores */
-  }
+/* Media Queries para Responsividade */
 
+/* Estilos para telas menores (móveis) */
+@media (max-width: 768px) {
+    header > h1 {
+        font-size: 6vw; /* Reduza o tamanho da fonte para telas menores */
+    }
+    
+    section {
+        font-size: 3vw; /* Reduza o tamanho do texto para telas menores */
+    }
+    
+    section#img02 {
+        background-position: center center; /* Ajuste a posição da imagem para telas menores */
+    }
+}
+
+/* Estilos para tablets (telas médias) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    header > h1 {
+        font-size: 8vw; /* Ajuste o tamanho da fonte para tablets */
+    }
+
+    /* Adicione outras regras de estilo conforme necessário para tablets */
+}
+
+/* Estilos para telas maiores (desktop) */
+@media (min-width: 1025px) {
+    header > h1 {
+        font-size: 10vw; /* Mantenha o tamanho da fonte padrão para telas maiores */
+    }
+
+    /* Adicione outras regras de estilo conforme necessário para telas maiores */
+}
