@@ -96,25 +96,26 @@ footer {
     padding: 10px;
 }
 
-@media (max-width: 640px) {
-    html, body {
-        font-size: 16px; /* Adjust the font size for better readability on smaller screens */
+/* Estilos para telas pequenas (móveis) */
+@media (max-width: 768px) {
+    /* Estilos específicos para telas menores */
+    body {
+      font-size: 1em; /* Ajuste o tamanho da fonte para telas menores */
     }
+  
+    /* Adicione outras regras de estilo conforme necessário */
+  }
+  
+  /* Estilos para telas médias (tablets) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* Estilos específicos para tablets */
+    body{
+        font-size: 1em;
+    }
+  }
+  
+  /* Estilos para telas maiores (desktop) */
+  @media (min-width: 1025px) {
+    /* Estilos específicos para telas maiores */
+  }
 
-    header > h1 {
-        font-size: 6vw; /* Adjust the font size for the header on smaller screens */
-    }
-
-    section {
-        font-size: 2em;
-        line-height: 1.5em; /* Adjust the font size for sections on smaller screens */
-    }
-
-    section > p {
-        font-weight: normal; /* Reset the font weight for paragraphs in sections */
-    }
-    
-    section.imagem > p {
-        width: auto; /* Allow the text to take the available width on smaller screens */
-    }
-}
