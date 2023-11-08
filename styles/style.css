@@ -112,6 +112,7 @@ footer {
 
     section > p {
         font-weight: normal; /* Reset the font weight for paragraphs in sections */
+        letter-spacing: normal;
     }
     
     section.imagem > p {
